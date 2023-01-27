@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: #69737F;
+   
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 310px;
+    max-width: 310px;
+    height: 540px;
+    background-color: #90B7C0;
+    border-radius: 10px;
+    
+}
+.img-container{
+    padding: 10px 10px 0px 0px;
+    text-align: right;
+}
+.calc-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding: 10px 10px 0px 0px;
+}
+.calc-container > p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.0rem;
+    color: #D2FBFF;
+}
+.calc-container > input{
+    width: 60%;
+    height: 50px;
+    border: none;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: right;
+    color: #434C58;
+}
+.calc-container > input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+/*Areas Botões*/
+
+.calc-number-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6F5FF;
+    height: 70%;
+    border-radius: 0px 0px 10px 10px;
+}
+.table-container button{
+    width: 63px;
+    height: 60px;
+    margin: 2px;
+
+    
+    color: #2B5159;
+    background: #E6F5FF;
+    box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.25);
+    padding: 0px;
+    border: none;
+    border-radius: 5px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+/*Layout Dark*/
+
+.main-container-dark{
+    background-color: #4B4B4D;
+}
+.calc-number-container-dark{
+    background-color: #38393A;
+}
+.body-dark{
+    background-color: #2C3A4C;
+}
+.table-container-dark button{
+    background: #38393A;
+    color: #7daeb9;
+}
+.calc-container-dark > input{
+    color: #E8F4FF;
+}
