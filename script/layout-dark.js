@@ -9,4 +9,4 @@ export function changeLayoutToDark() {
 
     document.querySelector('.calc-container').classList.toggle('calc-container-dark')
     
-}
+}   

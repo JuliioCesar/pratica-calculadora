@@ -12,11 +12,11 @@
     <section class="flex">
         <div class="main-container">
             <div class="img-container">
-               <input type="image" src="image/icone-black.svg" alt="submit">
+                <input type="image" src="image/icone-black.svg" alt="submit">
             </div>
             <div class="calc-container">
                 <p>10*10+11</p>
-                <input type="text" name="" id="" placeholder="">
+                <input type="text" name="" id="inputShow" placeholder="0">
             </div>
             <div class="calc-number-container">
             <table class="table-container">
@@ -31,60 +31,62 @@
                             <img src="image/maisoumenos-button.svg" alt="">
                         </button></td>
                     <td>
-                        <button>
+                        <button onclick="getValueButton('%')">
                             <img src="image/porcentagem-button.svg" alt="">
                         </button>
                     </td>
                     <td>
-                        <button>
+                        <button onclick="getValueButton('&#247;')">
                             <img src="image/divisor-button.svg" alt="">
                         </button>
                     </td>
                 </tr>
                 <tr>
-                    <td><button>7</button></td>
-                    <td><button>8</button></td>
-                    <td><button>9</button></td>
+                    <td><button onclick="getValueButton('7')">7</button></td>
+                    <td><button onclick="getValueButton('8')">8</button></td>
+                    <td><button onclick="getValueButton('9')">9</button></td>
                     <td>
-                        <button>
+                        <button onclick="getValueButton('&#x02A2F;')">
                             <img src="image/multiplicador-button.svg" alt="">
                         </button>
                     </td>
                 </tr>
                 <tr>
-                    <td><button>4</button></td>
-                    <td><button>5</button></td>
-                    <td><button>6</button></td>
+                    <td><button onclick="getValueButton('4')">4</button></td>
+                    <td><button onclick="getValueButton('5')">5</button></td>
+                    <td><button onclick="getValueButton('6')">6</button></td>
                     <td>
-                        <button>
+                        <button onclick="getValueButton('-')">
                             <img id="imdCard" src="image/menos-button.svg" alt="">
                         </button>
                     </td>
                 </tr>
                 <tr>
-                    <td><button>1</button></td>
-                    <td><button>2</button></td>
-                    <td><button>3</button></td>
+                    <td><button onclick="getValueButton('1')">1</button></td>
+                    <td><button onclick="getValueButton('2')">2</button></td>
+                    <td><button onclick="getValueButton('3')">3</button></td>
                     <td>
-                        <button>
+                        <button onclick="getValueButton('+')">
                             <img src="image/somar-button.svg" alt="">
                         </button>
                     </td>
                 </tr>
-                <br>
                 <tr>
                     <td>
-                        <button>
+                        <button onclick="deleteResultOnScreen()">
                             <img src="image/deleta-icon-button.svg" alt="">
                         </button>
                     </td>
-                    <td><button>0</button></td>
+                    <td>
+                        <button onclick="getValueButton('0')">0</button>
+                    </td>
                     <td><button>.</button></td>
-                    <td><button>=</button></td>
+                    <td><button> = </button></td>
                 </tr>
             </table>
-        </div>
+        </div> 
     </section>
-    <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="script/app.js"></script>
+    <script src="script/getValue.js"></script>
 </body>
 </html>
