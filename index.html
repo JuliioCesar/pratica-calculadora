@@ -15,19 +15,19 @@
                 <input type="image" src="image/icone-black.svg" alt="submit">
             </div>
             <div class="calc-container">
-                <p>10*10+11</p>
+                <p class="result-paragraph"></p>
                 <input type="text" name="" id="inputShow" placeholder="0">
             </div>
             <div class="calc-number-container">
             <table class="table-container">
                 <tr>
                     <td>
-                        <button>
+                        <button onclick=" deletaAllResultOnScreen()">
                             <img src="image/AC-button.svg" alt="">
                         </button>
                     </td>
                     <td>
-                        <button>
+                        <button onclick="transformValue()">
                             <img src="image/maisoumenos-button.svg" alt="">
                         </button></td>
                     <td>
@@ -36,7 +36,7 @@
                         </button>
                     </td>
                     <td>
-                        <button onclick="getValueButton('&#247;')">
+                        <button onclick="getValueButton('/')">
                             <img src="image/divisor-button.svg" alt="">
                         </button>
                     </td>
@@ -46,7 +46,7 @@
                     <td><button onclick="getValueButton('8')">8</button></td>
                     <td><button onclick="getValueButton('9')">9</button></td>
                     <td>
-                        <button onclick="getValueButton('&#x02A2F;')">
+                        <button onclick="getValueButton('*')">
                             <img src="image/multiplicador-button.svg" alt="">
                         </button>
                     </td>
@@ -80,13 +80,13 @@
                     <td>
                         <button onclick="getValueButton('0')">0</button>
                     </td>
-                    <td><button>.</button></td>
-                    <td><button> = </button></td>
+                    <td><button onclick="getValueButton(',')">,</button></td>
+                    <td><button onclick="calcular()"> = </button></td>
                 </tr>
             </table>
         </div> 
     </section>
     <script type="module" src="script/app.js"></script>
-    <script src="script/getValue.js"></script>
+    <script src="script/main.js"></script>
 </body>
 </html>

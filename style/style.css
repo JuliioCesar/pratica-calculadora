@@ -82,6 +82,12 @@ body{
     font-size: 1.6rem;
 }
 
+.table-container button:active{
+    /* background-color: rgba(0, 0, 0, 0.144); */
+    border: 1px solid #9F5E86;
+    color: #2b5159c2;
+}
+
 /*Layout Dark*/
 
 .main-container-dark{
